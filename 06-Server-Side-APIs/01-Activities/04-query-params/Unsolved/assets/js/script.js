@@ -6,9 +6,12 @@ function myFunction() {
   fetch(
     'https://api.giphy.com/v1/gifs/search?q=' +
       searchTerm +
+      
       // Add the rating parameter
       // YOUR CODE HERE
-      //
+      "&rating=" + rating + '&api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN&limit=1'
+
+        
       // Remember to add your API key
   )
     .then(function(response) {
